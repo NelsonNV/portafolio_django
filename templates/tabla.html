@@ -1,15 +1,12 @@
-
+{% extends "base.html" %}
 {% load static %}
 {% load generate_table %}
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ model_name_plural }}</title>
-</head>
-<body>
+{% block title %}
+    {{ model_name_plural }}
+{% endblock %}
+
+{% block content %}
     <h1>{{ model_name_plural }}</h1>
     <div>
         {% if create_url_name %}
@@ -19,5 +16,4 @@
     <div>
         {% render_table table_headers table_fields objects user.is_authenticated update_url_name delete_url_name null_values image_fields %}
     </div>
-</body>
-</html>
+{% endblock %}
