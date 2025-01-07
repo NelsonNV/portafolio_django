@@ -1,0 +1,42 @@
+:root {
+    /* Red */
+    --color-red: #ff4d4d;
+    --color-red-light: #ff9999;
+    --color-red-dark: #cc0000;
+    --color-red-hover: #e63939;
+    --color-red-light-hover: #ffb3b3;
+    --color-red-dark-hover: #b30000;
+
+    /* Blue */
+    --color-blue: #4d79ff;
+    --color-blue-light: #99b3ff;
+    --color-blue-dark: #0033cc;
+    --color-blue-hover: #3965e6;
+    --color-blue-light-hover: #b3ccff;
+    --color-blue-dark-hover: #002699;
+
+    /* Green */
+    --color-green: #4dff88;
+    --color-green-light: #99ffbb;
+    --color-green-dark: #00cc44;
+    --color-green-hover: #39e673;
+    --color-green-light-hover: #b3ffd1;
+    --color-green-dark-hover: #009933;
+
+    /* Yellow */
+    --color-yellow: #ffd24d;
+    --color-yellow-light: #ffe699;
+    --color-yellow-dark: #ccaa00;
+    --color-yellow-hover: #e6bc39;
+    --color-yellow-light-hover: #ffedb3;
+    --color-yellow-dark-hover: #b38f00;
+
+    /* Purple */
+    --color-purple: #9d4dff;
+    --color-purple-light: #c699ff;
+    --color-purple-dark: #7200cc;
+    --color-purple-hover: #8c39e6;
+    --color-purple-light-hover: #d1b3ff;
+    --color-purple-dark-hover: #590099;
+}
+

@@ -1,0 +1,52 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Logo */
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Nav */
+.nav-main {
+    display: flex;
+    gap: 20px; /* Espaciado entre los enlaces */
+}
+
+/* Centrado del nav */
+.nav-c {
+    justify-content: center;
+}
+
+.nav-l {
+    justify-content: flex-start;
+}
+
+.nav-r {
+    justify-content: flex-end;
+}
+
+/* Nav Items */
+.nav-item {
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Hover Effect */
+.nav-item:hover {
+    background-color: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+}
+
