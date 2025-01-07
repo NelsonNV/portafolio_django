@@ -4,6 +4,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.detail import DetailView
 from portafolio.models import SobreMi, SocialLink, Projecto, Experiencia
 from django.urls import reverse_lazy
+from django.views.generic.list import ListView
 
 
 
@@ -56,4 +57,31 @@ class BaseDeleteView(DeleteView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["view"] = self
+        return context
+
+
+class BaseListView(ListView):
+    template_name = "tabla.html"
+    context_object_name = "objects"
+    table_headers = []
+    table_fields = []
+    update_url_name = None
+    delete_url_name = None
+    create_url_name = None
+    has_permission = True
+    null_values = None
+    model_name_plural = "tabla"
+    image_fields = []
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["table_headers"] = self.table_headers
+        context["table_fields"] = self.table_fields
+        context["update_url_name"] = self.update_url_name
+        context["delete_url_name"] = self.delete_url_name
+        context["create_url_name"] = self.create_url_name
+        context["has_permission"] = self.has_permission
+        context["null_values"] = self.null_values or {}
+        context["model_name_plural"] = self.model_name_plural
+        context["image_fields"] = self.image_fields
         return context

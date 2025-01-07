@@ -1,7 +1,15 @@
 from django.http import Http404
-from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView
+from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView, BaseListView
 from portafolio.models import SocialLink
 from portafolio.forms import SocialLinkForm
+
+class SocialLinkListView(BaseListView):
+    model = SocialLink
+    table_headers = ["Título", "URL", "SVG", "Activo"]
+    table_fields = ["title", "url", "svg", "activo"]
+    update_url_name = "enlaces_sociales_editar"
+    delete_url_name = "enlaces_sociales_eliminar"
+    model_name_plural = "Enlaces Sociales"
 
 class SocialLinkCreateView(BaseCreateView):
     model = SocialLink

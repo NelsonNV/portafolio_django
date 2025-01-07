@@ -1,8 +1,16 @@
 from django.http import Http404
-from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView
+from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView, BaseListView
 from portafolio.models import Estudios
 from portafolio.forms import EstudiosForm
-
+class EstudiosListView(BaseListView):
+    model = Estudios
+    table_headers = ["Institución", "Título", "Descripción", "Inicio", "Fin", "Certificado", "Mostrar"]
+    table_fields = ["institucion", "titulo", "description", "inicio", "fin", "certificado", "mostrar"]
+    update_url_name = "estudios_editar"
+    delete_url_name = "estudios_eliminar"
+    model_name_plural = "Estudios"
+    image_fields = ["certificado"]
+    null_values = {"certificado": "(Sin certificado)"}
 class EstudiosCreateView(BaseCreateView):
     model = Estudios
     form_class = EstudiosForm

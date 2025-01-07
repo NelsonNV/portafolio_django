@@ -1,7 +1,18 @@
 from django.http import Http404
-from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView
+from core.views import BaseCreateView, BaseUpdateView, BaseDeleteView, BaseDetailView, BaseListView
 from portafolio.models import Projecto
 from portafolio.forms import ProjectoForm
+
+class ProjectoListView(BaseListView):
+    model = Projecto
+    table_headers = ["Título", "Descripción", "Repositorio", "Imagen"]
+    table_fields = ["title", "description", "repository", "image"]
+    update_url_name = "proyectos_editar"
+    delete_url_name = "proyectos_eliminar"
+    create_url_name = "proyectos_crear"
+    model_name_plural = "Proyectos"
+    image_fields = ["image"]
+    null_values = {"image": "(Sin imagen)", "repository": "No disponible"}
 
 class ProjectoCreateView(BaseCreateView):
     model = Projecto
