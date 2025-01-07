@@ -7,6 +7,7 @@ class EstudiosListView(BaseListView):
     table_headers = ["Institución", "Título", "Descripción", "Inicio", "Fin", "Certificado", "Mostrar"]
     table_fields = ["institucion", "titulo", "description", "inicio", "fin", "certificado", "mostrar"]
     update_url_name = "estudios_editar"
+    create_url_name ="estudios_crear"
     delete_url_name = "estudios_eliminar"
     model_name_plural = "Estudios"
     image_fields = ["certificado"]

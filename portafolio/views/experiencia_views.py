@@ -7,9 +7,11 @@ class ExperienciaListView(BaseListView):
     model = Experiencia
     table_headers = ["Empresa", "Cargo", "Descripción", "URL", "Inicio", "Fin", "Mostrar"]
     table_fields = ["empresa", "cargo", "description", "url", "inicio", "fin", "mostrar"]
+    create_url_name = "experiencias_crear"
     update_url_name = "experiencias_editar"
     delete_url_name = "experiencias_eliminar"
     model_name_plural = "Experiencias Profesionales"
+
 class ExperienciaCreateView(BaseCreateView):
     model = Experiencia
     form_class = ExperienciaForm

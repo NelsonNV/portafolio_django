@@ -9,6 +9,7 @@ class SocialLinkListView(BaseListView):
     table_fields = ["title", "url", "svg", "activo"]
     update_url_name = "enlaces_sociales_editar"
     delete_url_name = "enlaces_sociales_eliminar"
+    create_url_name = "enlaces_sociales_crear"
     model_name_plural = "Enlaces Sociales"
 
 class SocialLinkCreateView(BaseCreateView):
