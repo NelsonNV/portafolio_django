@@ -36,6 +36,7 @@ class Projecto(BaseModel):
     title = models.CharField(max_length=100)
     description = models.TextField()
     repository = models.URLField()
+    pagina = models.URLField(null=True, blank=True)
     image = models.ImageField(upload_to="project/")
     inicio = models.DateField()
     fin = models.DateField(null=True, blank=True)
