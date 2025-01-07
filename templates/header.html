@@ -7,11 +7,11 @@
         {% if request.user.is_authenticated %}
         <nav>
             <ul>
-                <li><a href="{% url 'sobre_mi_crear' %}">Crear Sobre Mí</a></li>
-                <li><a href="{% url 'enlaces_sociales_crear' %}">Crear Enlace Social</a></li>
-                <li><a href="{% url 'proyectos_crear' %}">Crear Proyecto</a></li>
-                <li><a href="{% url 'experiencias_crear' %}">Crear Experiencia</a></li>
-                <li><a href="{% url 'estudios_crear' %}">Crear Estudio</a></li>
+                <li><a href="{% url 'sobre_mi_crear' %}">Sobre Mí</a></li>
+                <li><a href="{% url 'enlaces_sociales_lista' %}">Enlace Social</a></li>
+                <li><a href="{% url 'proyectos_lista' %}">Proyecto</a></li>
+                <li><a href="{% url 'experiencias_lista' %}">Experiencia</a></li>
+                <li><a href="{% url 'estudios_lista' %}">Estudio</a></li>
             </ul>
         </nav>
         {% endif %}
