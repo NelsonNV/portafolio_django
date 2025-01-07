@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Mi Portafolio{% endblock %}
+
+{% block header %}
+<header id="sobre-mi">
+    <div class="perfil">
+        {% if sobremi %}
+            <img src="{{ sobremi.perfil.url }}" alt="Foto de {{ sobremi.full_name }}" class="perfil-imagen">
+            <h1>{{ sobremi.full_name }}</h1>
+            <p>{{ sobremi.descripcion }}</p>
+            <div class="fondo">
+                <img src="{{ sobremi.fondo.url }}" alt="Fondo" class="fondo-imagen">
+            </div>
+        {% else %}
+            <p>No se ha configurado información de 'Sobre Mí'.</p>
+        {% endif %}
+    </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<section id="social-links">
+    <h2>Conéctate conmigo</h2>
+    <ul>
+        {% for link in social_links %}
+            <li>
+                <a href="{{ link.url }}" target="_blank">
+                    {% if link.svg %}
+                        <span class="social-icon">{% autoescape off %}{{ link.svg }}{% endautoescape %}</span>
+                    {% endif %}
+                    {{ link.title }}
+                </a>
+            </li>
+        {% empty %}
+            <li>No hay enlaces sociales disponibles.</li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section id="proyectos">
+    <h2>Proyectos</h2>
+    <ul>
+        {% for proyecto in projects %}
+            <li>
+                <img src="{{ proyecto.image.url }}" alt="{{ proyecto.title }}" class="proyecto-imagen">
+                <h3>{{ proyecto.title }}</h3>
+                <p>{{ proyecto.description }}</p>
+                <div class="proyecto-links">
+                    <a href="{{ proyecto.repository }}" target="_blank">Repositorio</a>
+                    {% if proyecto.pagina %}
+                        <a href="{{ proyecto.pagina }}" target="_blank">Ver página</a>
+                    {% endif %}
+                </div>
+            </li>
+        {% empty %}
+            <li>No hay proyectos disponibles.</li>
+        {% endfor %}
+    </ul>
+</section>
+
+<section id="experiencias">
+    <h2>Experiencias Profesionales</h2>
+    <ul>
+        {% for experiencia in experiencias %}
+            <li>
+                <h3>{{ experiencia.cargo }} en {{ experiencia.empresa }}</h3>
+                <p>{{ experiencia.description }}</p>
+                <p>
+                    <strong>Inicio:</strong> {{ experiencia.inicio }}<br>
+                    {% if experiencia.fin %}
+                        <strong>Fin:</strong> {{ experiencia.fin }}
+                    {% else %}
+                        <strong>Actualidad</strong>
+                    {% endif %}
+                </p>
+                {% if experiencia.url %}
+                    <a href="{{ experiencia.url }}" target="_blank">Más información</a>
+                {% endif %}
+            </li>
+        {% empty %}
+            <li>No hay experiencias profesionales disponibles.</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
+

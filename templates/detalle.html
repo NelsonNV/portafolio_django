@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ view.title }}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ view.title }}</h1>
+        <dl>
+            {% for field in view.model._meta.fields %}
+                <dt>{{ field.verbose_name }}</dt>
+                <dd>{{ object|attr:field.name }}</dd>
+            {% endfor %}
+        </dl>
+        <a href="/" class="btn btn-primary">Volver</a>
+    </div>
+</body>
+</html>

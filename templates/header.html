@@ -1,0 +1,19 @@
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="" alt="Logotipo" width="25" height="24">
+        </div>
+        {% if request.user.is_authenticated %}
+        <nav>
+            <ul>
+                <li><a href="{% url 'sobre_mi_crear' %}">Crear Sobre Mí</a></li>
+                <li><a href="{% url 'enlaces_sociales_crear' %}">Crear Enlace Social</a></li>
+                <li><a href="{% url 'proyectos_crear' %}">Crear Proyecto</a></li>
+                <li><a href="{% url 'experiencias_crear' %}">Crear Experiencia</a></li>
+                <li><a href="{% url 'estudios_crear' %}">Crear Estudio</a></li>
+            </ul>
+        </nav>
+        {% endif %}
+    </div>
+</header>

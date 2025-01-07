@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ view.title }}</title>
+  <!-- Enlaza estilos como Bootstrap aquí -->
+</head>
+
+<body>
+  <div class="container">
+    <h1>{{ view.title }}</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    <a href="{% url 'index' %}" class="btn btn-secondary">Cancelar</a>
+  </div>
+</body>
+
+</html>
