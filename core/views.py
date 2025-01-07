@@ -47,7 +47,10 @@ class BaseDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["view"] = self
+        # Obtener los campos del modelo, excluyendo los automáticos como `id`
+        context["fields"] = [field for field in self.model._meta.fields]
         return context
+
 
 class BaseDeleteView(DeleteView):
     template_name = "confirm_delete.html"
