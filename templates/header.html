@@ -1,19 +1,24 @@
-
 <header>
     <div class="header-container">
         <div class="logo">
             <img src="" alt="Logotipo" width="25" height="24">
         </div>
-        {% if request.user.is_authenticated %}
-        <nav>
-            <ul>
-                <li><a href="{% url 'sobre_mi_crear' %}">Sobre Mí</a></li>
-                <li><a href="{% url 'enlaces_sociales_lista' %}">Enlace Social</a></li>
-                <li><a href="{% url 'proyectos_lista' %}">Proyecto</a></li>
-                <li><a href="{% url 'experiencias_lista' %}">Experiencia</a></li>
-                <li><a href="{% url 'estudios_lista' %}">Estudio</a></li>
-            </ul>
+        <nav class="nav-main nav-c">
+            <a class="nav-item" href="{% if request.user.is_authenticated %}{% url 'sobre_mi_crear' %}{% else %}#about{% endif %}">
+                Sobre Mí
+            </a>
+            <a class="nav-item" href="{% if request.user.is_authenticated %}{% url 'enlaces_sociales_lista' %}{% else %}#social-links{% endif %}">
+                Enlace Social
+            </a>
+            <a class="nav-item" href="{% if request.user.is_authenticated %}{% url 'proyectos_lista' %}{% else %}#projects{% endif %}">
+                Proyecto
+            </a>
+            <a class="nav-item" href="{% if request.user.is_authenticated %}{% url 'experiencias_lista' %}{% else %}#experience{% endif %}">
+                Experiencia
+            </a>
+            <a class="nav-item" href="{% if request.user.is_authenticated %}{% url 'estudios_lista' %}{% else %}#education{% endif %}">
+                Estudio
+            </a>
         </nav>
-        {% endif %}
     </div>
 </header>
