@@ -38,9 +38,8 @@
 
 
 
-<section id="proyectos" class="grid col-12">
-    <h2 class="span-12">Proyectos</h2>
-    <div class="grid col-3">
+<section id="proyectos" class="grid col-4">
+    <h2 class="span-4">Proyectos</h2>
         {% for proyecto in projects %}
         <div class="span-1 proyecto">
             <img src="{{ proyecto.image.url }}" alt="{{ proyecto.title }}" class="img-16/9 max-w-250 br-10 hzoom-50 hzoom">
@@ -59,7 +58,6 @@
             <p>No hay proyectos disponibles.</p>
         </div>
         {% endfor %}
-    </div>
 </section>
 
 <section id="experiencias" class="grid col-12">
