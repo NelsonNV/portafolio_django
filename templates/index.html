@@ -4,26 +4,29 @@
 
 {% block content %}
 
+
 <section id="sobre-mi" class="grid col-12">
-    <div class="perfil span-6">
+    <!-- Imagen de perfil -->
+    <div class="perfil-imagen-container span-3">
         {% if sobremi %}
-            <img src="{{ sobremi.perfil.url }}" alt="Foto de {{ sobremi.full_name }}" class="perfil-imagen">
-            <h1>{{ sobremi.full_name }}</h1>
-            <p>{{ sobremi.descripcion }}</p>
-        {% else %}
-            <p>No se ha configurado información de 'Sobre Mí'.</p>
+        <img src="{{ sobremi.perfil.url }}" alt="Foto de {{ sobremi.full_name }}" class="perfil-imagen s-auto br-24 ">
         {% endif %}
     </div>
-    {% if sobremi and sobremi.fondo %}
-    <div class="fondo span-6">
-        <img src="{{ sobremi.fondo.url }}" alt="Fondo" class="fondo-imagen">
+    <!-- Nombre y descripción a la derecha -->
+    <div class="perfil-info span-4 s-auto">
+        {% if sobremi %}
+        <h1 class="perfil-nombre">{{ sobremi.full_name }}</h1>
+        <p class="perfil-descripcion">{{ sobremi.descripcion }}</p>
+        {% else %}
+        <p>No se ha configurado información de 'Sobre Mí'.</p>
+        {% endif %}
     </div>
-    {% endif %}
+    <!-- Botones de enlaces sociales debajo -->
     <div class="botones span-12 grid col-6">
         {% for link in social_links %}
         <a href="{{ link.url }}" target="_blank" class="btn btn-red">
             {% if link.svg %}
-            <span class="btn-icon">{% autoescape off %}{% endautoescape %}</span>
+            <span class="btn-icon s-1/2  ">{% autoescape off %}{{ link.svg }}{% endautoescape %}</span>
             {% endif %}
             {{ link.title }}
         </a>
@@ -32,6 +35,7 @@
         {% endfor %}
     </div>
 </section>
+
 
 
 <section id="proyectos" class="grid col-12">
