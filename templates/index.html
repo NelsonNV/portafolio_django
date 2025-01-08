@@ -43,13 +43,14 @@
     <div class="grid col-3">
         {% for proyecto in projects %}
         <div class="span-1 proyecto">
-            <img src="{{ proyecto.image.url }}" alt="{{ proyecto.title }}" class="proyecto-imagen">
+            <img src="{{ proyecto.image.url }}" alt="{{ proyecto.title }}" class="img-16/9 max-w-250 br-10 hzoom-50 hzoom">
             <h3>{{ proyecto.title }}</h3>
             <p>{{ proyecto.description }}</p>
             <div class="proyecto-links">
-                <a href="{{ proyecto.repository }}" target="_blank">Repositorio</a>
+                <a href="{{ proyecto.repository }}" target="_blank" class="btn btn-black">Repositorio</a>
+                <a href="{% url "proyectos_detalle" pk=proyecto.pk %}" class="btn btn-sky text-black">Detalle</a>
                 {% if proyecto.pagina %}
-                <a href="{{ proyecto.pagina }}" target="_blank">Ver página</a>
+                <a href="{{ proyecto.pagina }}" target="_blank" class="btn btn-green">Ver página</a>
                 {% endif %}
             </div>
         </div>
