@@ -1,0 +1,82 @@
+
+/* Clase base para botones */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Sin subrayado para enlaces */
+    color: #fff; /* Texto blanco por defecto */
+    padding: 10px 15px;
+    border-radius: 5px; /* Esquinas redondeadas */
+    font-size: 14px;
+    font-weight: bold;
+    border: none; /* Quitar bordes para botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    gap: 8px; /* Espaciado entre ícono y texto */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Botón Red */
+.btn-red {
+    background-color: var(--color-red);
+    color: #fff;
+}
+
+.btn-red:hover {
+    background-color: var(--color-red-hover);
+}
+
+/* Botón Blue */
+.btn-blue {
+    background-color: var(--color-blue);
+    color: #fff;
+}
+
+.btn-blue:hover {
+    background-color: var(--color-blue-hover);
+}
+
+/* Botón Green */
+.btn-green {
+    background-color: var(--color-green);
+    color: #fff;
+}
+
+.btn-green:hover {
+    background-color: var(--color-green-hover);
+}
+
+/* Botón Yellow */
+.btn-yellow {
+    background-color: var(--color-yellow);
+    color: #fff;
+}
+
+.btn-yellow:hover {
+    background-color: var(--color-yellow-hover);
+}
+
+/* Botón Purple */
+.btn-purple {
+    background-color: var(--color-purple);
+    color: #fff;
+}
+
+.btn-purple:hover {
+    background-color: var(--color-purple-hover);
+}
+
+/* Asegurando que funcione para elementos <button> */
+button.btn {
+    all: unset; /* Resetea estilos por defecto de <button> */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit; /* Mantiene la fuente del contenedor */
+    cursor: pointer;
+}
+
