@@ -1,0 +1,44 @@
+/* Contenedor para imágenes con proporción */
+.img-wrapper {
+    display: block;
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    overflow: hidden;
+    border-radius: var(--s-2); /* Opcional: bordes redondeados */
+}
+
+/* Proporciones comunes */
+.img-16/9 {
+    aspect-ratio: 16 / 9;
+}
+
+.img-4/3 {
+    aspect-ratio: 4 / 3;
+}
+
+.img-1/1 {
+    aspect-ratio: 1 / 1;
+}
+
+.img-21/9 {
+    aspect-ratio: 21 / 9;
+}
+
+.img-3/2 {
+    aspect-ratio: 3 / 2;
+}
+
+.img-9/16 {
+    aspect-ratio: 9 / 16;
+}
+
+.img-2/1 {
+    aspect-ratio: 2 / 1;
+}
+
+/* Imagen interna */
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen al contenedor sin deformarla */
+}
+

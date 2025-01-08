@@ -1,0 +1,33 @@
+/* Clase base para hover-zoom */
+.hzoom {
+    display: block;
+    transition: transform 0.3s ease; /* Suaviza el efecto de zoom */
+}
+
+/* Efecto de zoom */
+.hzoom:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+}
+
+/* Variantes de zoom */
+.hzoom-5:hover {
+    transform: scale(1.05); /* 105% */
+}
+
+.hzoom-10:hover {
+    transform: scale(1.10); /* 110% */
+}
+
+.hzoom-20:hover {
+    transform: scale(1.20); /* 120% */
+}
+
+.hzoom-50:hover {
+    transform: scale(1.50); /* 150% */
+}
+
+/* Asegura que el contenido se mantenga dentro si es necesario */
+.hover-zoom-container {
+    overflow: hidden;
+}
+

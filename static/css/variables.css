@@ -38,5 +38,52 @@
     --color-purple-hover: #8c39e6;
     --color-purple-light-hover: #d1b3ff;
     --color-purple-dark-hover: #590099;
-}
 
+    /* Black */
+    --color-black: #000000;
+    --color-black-light: #333333;
+    --color-black-dark: #000000;
+    --color-black-hover: #1a1a1a;
+
+    /* Gray */
+    --color-gray: #808080;
+    --color-gray-light: #d3d3d3;
+    --color-gray-dark: #505050;
+    --color-gray-hover: #b0b0b0;
+
+    /* Sky */
+    --color-sky: #87ceeb;
+    --color-sky-light: #b0e2ff;
+    --color-sky-dark: #4682b4;
+    --color-sky-hover: #5dade2;
+
+    /* Orange */
+    --color-orange: #ffa500;
+    --color-orange-light: #ffcc80;
+    --color-orange-dark: #cc8400;
+    --color-orange-hover: #ffb84d;
+
+    /* Pink */
+    --color-pink: #ff69b4;
+    --color-pink-light: #ffb6c1;
+    --color-pink-dark: #c71585;
+    --color-pink-hover: #ff85d4;
+
+    /* Teal */
+    --color-teal: #008080;
+    --color-teal-light: #40e0d0;
+    --color-teal-dark: #004d4d;
+    --color-teal-hover: #20b2aa;
+
+    /* Brown */
+    --color-brown: #a52a2a;
+    --color-brown-light: #d2b48c;
+    --color-brown-dark: #5a2a2a;
+    --color-brown-hover: #c57a74;
+
+    /* White */
+    --color-white: #ffffff;
+    --color-white-dark: #f0f0f0;
+    --color-white-light: #ffffff;
+    --color-white-hover: #e6e6e6;
+}

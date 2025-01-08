@@ -1,0 +1,256 @@
+/* Colores de texto */
+.text-red {
+    color: var(--color-red);
+}
+
+.text-red-light {
+    color: var(--color-red-light);
+}
+
+.text-red-dark {
+    color: var(--color-red-dark);
+}
+
+.text-red-hover:hover {
+    color: var(--color-red-hover);
+}
+
+.text-red-light-hover:hover {
+    color: var(--color-red-light-hover);
+}
+
+.text-red-dark-hover:hover {
+    color: var(--color-red-dark-hover);
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.text-blue-light {
+    color: var(--color-blue-light);
+}
+
+.text-blue-dark {
+    color: var(--color-blue-dark);
+}
+
+.text-blue-hover:hover {
+    color: var(--color-blue-hover);
+}
+
+.text-blue-light-hover:hover {
+    color: var(--color-blue-light-hover);
+}
+
+.text-blue-dark-hover:hover {
+    color: var(--color-blue-dark-hover);
+}
+
+.text-green {
+    color: var(--color-green);
+}
+
+.text-green-light {
+    color: var(--color-green-light);
+}
+
+.text-green-dark {
+    color: var(--color-green-dark);
+}
+
+.text-green-hover:hover {
+    color: var(--color-green-hover);
+}
+
+.text-green-light-hover:hover {
+    color: var(--color-green-light-hover);
+}
+
+.text-green-dark-hover:hover {
+    color: var(--color-green-dark-hover);
+}
+
+.text-yellow {
+    color: var(--color-yellow);
+}
+
+.text-yellow-light {
+    color: var(--color-yellow-light);
+}
+
+.text-yellow-dark {
+    color: var(--color-yellow-dark);
+}
+
+.text-yellow-hover:hover {
+    color: var(--color-yellow-hover);
+}
+
+.text-yellow-light-hover:hover {
+    color: var(--color-yellow-light-hover);
+}
+
+.text-yellow-dark-hover:hover {
+    color: var(--color-yellow-dark-hover);
+}
+
+.text-purple {
+    color: var(--color-purple);
+}
+
+.text-purple-light {
+    color: var(--color-purple-light);
+}
+
+.text-purple-dark {
+    color: var(--color-purple-dark);
+}
+
+.text-purple-hover:hover {
+    color: var(--color-purple-hover);
+}
+
+.text-purple-light-hover:hover {
+    color: var(--color-purple-light-hover);
+}
+
+.text-purple-dark-hover:hover {
+    color: var(--color-purple-dark-hover);
+}
+
+/* Negro */
+.text-black {
+    color: var(--color-black);
+}
+
+.text-black-light {
+    color: var(--color-black-light);
+}
+
+.text-black-dark {
+    color: var(--color-black-dark);
+}
+
+.text-black-hover:hover {
+    color: var(--color-black-hover);
+}
+
+/* Gris */
+.text-gray {
+    color: var(--color-gray);
+}
+
+.text-gray-light {
+    color: var(--color-gray-light);
+}
+
+.text-gray-dark {
+    color: var(--color-gray-dark);
+}
+
+.text-gray-hover:hover {
+    color: var(--color-gray-hover);
+}
+
+/* Cielo */
+.text-sky {
+    color: var(--color-sky);
+}
+
+.text-sky-light {
+    color: var(--color-sky-light);
+}
+
+.text-sky-dark {
+    color: var(--color-sky-dark);
+}
+
+.text-sky-hover:hover {
+    color: var(--color-sky-hover);
+}
+
+/* Naranja */
+.text-orange {
+    color: var(--color-orange);
+}
+
+.text-orange-light {
+    color: var(--color-orange-light);
+}
+
+.text-orange-dark {
+    color: var(--color-orange-dark);
+}
+
+.text-orange-hover:hover {
+    color: var(--color-orange-hover);
+}
+
+/* Rosa */
+.text-pink {
+    color: var(--color-pink);
+}
+
+.text-pink-light {
+    color: var(--color-pink-light);
+}
+
+.text-pink-dark {
+    color: var(--color-pink-dark);
+}
+
+.text-pink-hover:hover {
+    color: var(--color-pink-hover);
+}
+
+/* Turquesa */
+.text-teal {
+    color: var(--color-teal);
+}
+
+.text-teal-light {
+    color: var(--color-teal-light);
+}
+
+.text-teal-dark {
+    color: var(--color-teal-dark);
+}
+
+.text-teal-hover:hover {
+    color: var(--color-teal-hover);
+}
+
+/* Marrón */
+.text-brown {
+    color: var(--color-brown);
+}
+
+.text-brown-light {
+    color: var(--color-brown-light);
+}
+
+.text-brown-dark {
+    color: var(--color-brown-dark);
+}
+
+.text-brown-hover:hover {
+    color: var(--color-brown-hover);
+}
+
+/* Blanco */
+.text-white {
+    color: var(--color-white);
+}
+
+.text-white-light {
+    color: var(--color-white-light);
+}
+
+.text-white-dark {
+    color: var(--color-white-dark);
+}
+
+.text-white-hover:hover {
+    color: var(--color-white-hover);
+}

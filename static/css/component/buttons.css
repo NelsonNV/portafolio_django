@@ -70,6 +70,86 @@
     background-color: var(--color-purple-hover);
 }
 
+/* Botón Black */
+.btn-black {
+    background-color: var(--color-black);
+    color: #fff;
+}
+
+.btn-black:hover {
+    background-color: var(--color-black-hover);
+}
+
+/* Botón Gray */
+.btn-gray {
+    background-color: var(--color-gray);
+    color: #000;
+}
+
+.btn-gray:hover {
+    background-color: var(--color-gray-hover);
+}
+
+/* Botón Sky */
+.btn-sky {
+    background-color: var(--color-sky);
+    color: #000;
+}
+
+.btn-sky:hover {
+    background-color: var(--color-sky-hover);
+}
+
+/* Botón Orange */
+.btn-orange {
+    background-color: var(--color-orange);
+    color: #000;
+}
+
+.btn-orange:hover {
+    background-color: var(--color-orange-hover);
+}
+
+/* Botón Pink */
+.btn-pink {
+    background-color: var(--color-pink);
+    color: #fff;
+}
+
+.btn-pink:hover {
+    background-color: var(--color-pink-hover);
+}
+
+/* Botón Teal */
+.btn-teal {
+    background-color: var(--color-teal);
+    color: #fff;
+}
+
+.btn-teal:hover {
+    background-color: var(--color-teal-hover);
+}
+
+/* Botón Brown */
+.btn-brown {
+    background-color: var(--color-brown);
+    color: #fff;
+}
+
+.btn-brown:hover {
+    background-color: var(--color-brown-hover);
+}
+
+/* Botón White */
+.btn-white {
+    background-color: var(--color-white);
+    color: #000;
+}
+
+.btn-white:hover {
+    background-color: var(--color-white-hover);
+}
+
 /* Asegurando que funcione para elementos <button> */
 button.btn {
     all: unset; /* Resetea estilos por defecto de <button> */
