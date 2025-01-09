@@ -22,11 +22,11 @@
         {% endif %}
     </div>
     <!-- Botones de enlaces sociales debajo -->
-    <div class="botones span-12 grid col-6">
+    <div class="botones span-12 grid col-12 m-col-4 s-col-3 ">
         {% for link in social_links %}
-        <a href="{{ link.url }}" target="_blank" class="btn btn-red">
+        <a href="{{ link.url }}" target="_blank" class="btn btn-purple span-auto br-24">
             {% if link.svg %}
-            <span class="btn-icon s-1/2  ">{% autoescape off %}{{ link.svg }}{% endautoescape %}</span>
+            <span class="btn-icon s-1/2">{% autoescape off %}{{ link.svg }}{% endautoescape %}</span>
             {% endif %}
             {{ link.title }}
         </a>
@@ -38,8 +38,8 @@
 
 
 
-<section id="proyectos" class="grid col-4">
-    <h2 class="span-4">Proyectos</h2>
+<section id="proyectos" class="grid col-4 s-col-1">
+    <h2 class="span-4 s-span-1">Proyectos</h2>
         {% for proyecto in projects %}
         <div class="span-1 proyecto">
             <img src="{{ proyecto.image.url }}" alt="{{ proyecto.title }}" class="img-16/9 max-w-250 br-10 hzoom-50 hzoom">
