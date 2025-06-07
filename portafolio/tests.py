@@ -99,3 +99,30 @@ class EstudiosTestCase(TestCase):
         self.assertEqual(estudio.institucion, "Universidad X")
         self.assertEqual(estudio.titulo, "Ingeniería en Sistemas")
         self.assertTrue(estudio.mostrar)
+
+
+class ProjectoMasivoTestCase(TestCase):
+    def setUp(self):
+        # Crear 1,000 proyectos
+        Projecto.objects.bulk_create(
+            [
+                Projecto(
+                    title=f"Projecto {_}",
+                    description="Descripción masiva",
+                    repository=f"https://github.com/usuario/proyecto{_}",
+                    pagina=f"https://proyecto{_}.com",
+                    image=f"project/{_}.jpg",
+                    inicio="2022-01-01",
+                    fin="2022-12-31",
+                )
+                for _ in range(100000)
+            ]
+        )
+
+    def test_count_projects(self):
+        count = Projecto.objects.count()
+        self.assertEqual(count, 100000)
+
+    def test_recent_projects(self):
+        recent_projects = Projecto.objects.filter(inicio__year=2022).count()
+        self.assertEqual(recent_projects, 100000)
