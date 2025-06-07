@@ -1,0 +1,5 @@
+psrecord==1.4
+pillow==11.1.0
+matplotlib==3.10.0
+Django==5.1.4
+
