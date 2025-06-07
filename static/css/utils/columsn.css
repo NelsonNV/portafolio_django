@@ -93,6 +93,6 @@
 	.s-span-10 { grid-column: span 10; }
 	.s-span-11 { grid-column: span 11; }
 	.s-span-12 { grid-column: span 12; }
-  .s-span-auto { grid-column: auto; }
+  .s-span-auto { grid-column: span auto; }
 
 }
